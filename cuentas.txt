@@ -1,0 +1,6 @@
+1 Caja 
+2 Bancos 
+3 Inventarios  
+4 Capital
+5 Ventas
+6 Compras
