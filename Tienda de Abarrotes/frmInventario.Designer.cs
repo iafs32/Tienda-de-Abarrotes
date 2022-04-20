@@ -30,15 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             this.dgvInventario = new System.Windows.Forms.DataGridView();
-            this.tiendaDeAbarrotesDataSet = new Tienda_de_Abarrotes.tiendaDeAbarrotesDataSet();
-            this.tiendaDeAbarrotesDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.inventarioBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.inventarioTableAdapter = new Tienda_de_Abarrotes.tiendaDeAbarrotesDataSetTableAdapters.InventarioTableAdapter();
-            this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nombreDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.piezasDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.precioUnitarioDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.valorTotalDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lblNombre = new System.Windows.Forms.Label();
             this.lblPiezas = new System.Windows.Forms.Label();
             this.lblPrecio = new System.Windows.Forms.Label();
@@ -50,11 +42,19 @@
             this.btnInsertar = new System.Windows.Forms.Button();
             this.btnModificar = new System.Windows.Forms.Button();
             this.btnEliminar = new System.Windows.Forms.Button();
+            this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nombreDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.piezasDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.precioUnitarioDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.valorTotalDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tiendaDeAbarrotesDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.tiendaDeAbarrotesDataSet = new Tienda_de_Abarrotes.tiendaDeAbarrotesDataSet();
+            this.inventarioTableAdapter = new Tienda_de_Abarrotes.tiendaDeAbarrotesDataSetTableAdapters.InventarioTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.dgvInventario)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tiendaDeAbarrotesDataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tiendaDeAbarrotesDataSetBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.inventarioBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tiendaDeAbarrotesDataSetBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tiendaDeAbarrotesDataSet)).BeginInit();
             this.SuspendLayout();
             // 
             // dgvInventario
@@ -75,64 +75,10 @@
             this.dgvInventario.Size = new System.Drawing.Size(1067, 343);
             this.dgvInventario.TabIndex = 0;
             // 
-            // tiendaDeAbarrotesDataSet
-            // 
-            this.tiendaDeAbarrotesDataSet.DataSetName = "tiendaDeAbarrotesDataSet";
-            this.tiendaDeAbarrotesDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // tiendaDeAbarrotesDataSetBindingSource
-            // 
-            this.tiendaDeAbarrotesDataSetBindingSource.DataSource = this.tiendaDeAbarrotesDataSet;
-            this.tiendaDeAbarrotesDataSetBindingSource.Position = 0;
-            // 
             // inventarioBindingSource
             // 
             this.inventarioBindingSource.DataMember = "Inventario";
             this.inventarioBindingSource.DataSource = this.tiendaDeAbarrotesDataSetBindingSource;
-            // 
-            // inventarioTableAdapter
-            // 
-            this.inventarioTableAdapter.ClearBeforeFill = true;
-            // 
-            // idDataGridViewTextBoxColumn
-            // 
-            this.idDataGridViewTextBoxColumn.DataPropertyName = "Id";
-            this.idDataGridViewTextBoxColumn.HeaderText = "Id";
-            this.idDataGridViewTextBoxColumn.MinimumWidth = 8;
-            this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
-            this.idDataGridViewTextBoxColumn.Width = 150;
-            // 
-            // nombreDataGridViewTextBoxColumn
-            // 
-            this.nombreDataGridViewTextBoxColumn.DataPropertyName = "Nombre";
-            this.nombreDataGridViewTextBoxColumn.HeaderText = "Nombre";
-            this.nombreDataGridViewTextBoxColumn.MinimumWidth = 8;
-            this.nombreDataGridViewTextBoxColumn.Name = "nombreDataGridViewTextBoxColumn";
-            this.nombreDataGridViewTextBoxColumn.Width = 150;
-            // 
-            // piezasDataGridViewTextBoxColumn
-            // 
-            this.piezasDataGridViewTextBoxColumn.DataPropertyName = "Piezas";
-            this.piezasDataGridViewTextBoxColumn.HeaderText = "Piezas";
-            this.piezasDataGridViewTextBoxColumn.MinimumWidth = 8;
-            this.piezasDataGridViewTextBoxColumn.Name = "piezasDataGridViewTextBoxColumn";
-            this.piezasDataGridViewTextBoxColumn.Width = 150;
-            // 
-            // precioUnitarioDataGridViewTextBoxColumn
-            // 
-            this.precioUnitarioDataGridViewTextBoxColumn.DataPropertyName = "Precio_Unitario";
-            this.precioUnitarioDataGridViewTextBoxColumn.HeaderText = "Precio_Unitario";
-            this.precioUnitarioDataGridViewTextBoxColumn.MinimumWidth = 8;
-            this.precioUnitarioDataGridViewTextBoxColumn.Name = "precioUnitarioDataGridViewTextBoxColumn";
-            this.precioUnitarioDataGridViewTextBoxColumn.Width = 150;
-            // 
-            // valorTotalDataGridViewTextBoxColumn
-            // 
-            this.valorTotalDataGridViewTextBoxColumn.DataPropertyName = "Valor_Total";
-            this.valorTotalDataGridViewTextBoxColumn.HeaderText = "Valor_Total";
-            this.valorTotalDataGridViewTextBoxColumn.MinimumWidth = 8;
-            this.valorTotalDataGridViewTextBoxColumn.Name = "valorTotalDataGridViewTextBoxColumn";
-            this.valorTotalDataGridViewTextBoxColumn.Width = 150;
             // 
             // lblNombre
             // 
@@ -200,6 +146,7 @@
             this.btnInsertar.TabIndex = 8;
             this.btnInsertar.Text = "Insertar";
             this.btnInsertar.UseVisualStyleBackColor = true;
+            this.btnInsertar.Click += new System.EventHandler(this.btnInsertar_Click);
             // 
             // btnModificar
             // 
@@ -209,6 +156,7 @@
             this.btnModificar.TabIndex = 9;
             this.btnModificar.Text = "Modificar";
             this.btnModificar.UseVisualStyleBackColor = true;
+            this.btnModificar.Click += new System.EventHandler(this.btnModificar_Click);
             // 
             // btnEliminar
             // 
@@ -218,6 +166,61 @@
             this.btnEliminar.TabIndex = 10;
             this.btnEliminar.Text = "Eliminar";
             this.btnEliminar.UseVisualStyleBackColor = true;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
+            // 
+            // idDataGridViewTextBoxColumn
+            // 
+            this.idDataGridViewTextBoxColumn.DataPropertyName = "Id";
+            this.idDataGridViewTextBoxColumn.HeaderText = "Id";
+            this.idDataGridViewTextBoxColumn.MinimumWidth = 8;
+            this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
+            this.idDataGridViewTextBoxColumn.Width = 150;
+            // 
+            // nombreDataGridViewTextBoxColumn
+            // 
+            this.nombreDataGridViewTextBoxColumn.DataPropertyName = "Nombre";
+            this.nombreDataGridViewTextBoxColumn.HeaderText = "Nombre";
+            this.nombreDataGridViewTextBoxColumn.MinimumWidth = 8;
+            this.nombreDataGridViewTextBoxColumn.Name = "nombreDataGridViewTextBoxColumn";
+            this.nombreDataGridViewTextBoxColumn.Width = 150;
+            // 
+            // piezasDataGridViewTextBoxColumn
+            // 
+            this.piezasDataGridViewTextBoxColumn.DataPropertyName = "Piezas";
+            this.piezasDataGridViewTextBoxColumn.HeaderText = "Piezas";
+            this.piezasDataGridViewTextBoxColumn.MinimumWidth = 8;
+            this.piezasDataGridViewTextBoxColumn.Name = "piezasDataGridViewTextBoxColumn";
+            this.piezasDataGridViewTextBoxColumn.Width = 150;
+            // 
+            // precioUnitarioDataGridViewTextBoxColumn
+            // 
+            this.precioUnitarioDataGridViewTextBoxColumn.DataPropertyName = "Precio_Unitario";
+            this.precioUnitarioDataGridViewTextBoxColumn.HeaderText = "Precio_Unitario";
+            this.precioUnitarioDataGridViewTextBoxColumn.MinimumWidth = 8;
+            this.precioUnitarioDataGridViewTextBoxColumn.Name = "precioUnitarioDataGridViewTextBoxColumn";
+            this.precioUnitarioDataGridViewTextBoxColumn.Width = 150;
+            // 
+            // valorTotalDataGridViewTextBoxColumn
+            // 
+            this.valorTotalDataGridViewTextBoxColumn.DataPropertyName = "Valor_Total";
+            this.valorTotalDataGridViewTextBoxColumn.HeaderText = "Valor_Total";
+            this.valorTotalDataGridViewTextBoxColumn.MinimumWidth = 8;
+            this.valorTotalDataGridViewTextBoxColumn.Name = "valorTotalDataGridViewTextBoxColumn";
+            this.valorTotalDataGridViewTextBoxColumn.Width = 150;
+            // 
+            // tiendaDeAbarrotesDataSetBindingSource
+            // 
+            this.tiendaDeAbarrotesDataSetBindingSource.DataSource = this.tiendaDeAbarrotesDataSet;
+            this.tiendaDeAbarrotesDataSetBindingSource.Position = 0;
+            // 
+            // tiendaDeAbarrotesDataSet
+            // 
+            this.tiendaDeAbarrotesDataSet.DataSetName = "tiendaDeAbarrotesDataSet";
+            this.tiendaDeAbarrotesDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // inventarioTableAdapter
+            // 
+            this.inventarioTableAdapter.ClearBeforeFill = true;
             // 
             // frmInventario
             // 
@@ -241,10 +244,10 @@
             this.Text = "Inventario";
             this.Load += new System.EventHandler(this.frmInventario_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvInventario)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tiendaDeAbarrotesDataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tiendaDeAbarrotesDataSetBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.inventarioBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tiendaDeAbarrotesDataSetBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tiendaDeAbarrotesDataSet)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
