@@ -50,5 +50,12 @@ namespace Tienda_de_Abarrotes
             this.inventarioTableAdapter.Borrar(txbNombre.Text);
             this.inventarioTableAdapter.Fill(this.tiendaDeAbarrotesDataSet.Inventario);
         }
+
+        private void btnRegresar_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            frmMenu frmMenu = new frmMenu();
+            frmMenu.Show();
+        }
     }
 }

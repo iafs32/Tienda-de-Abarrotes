@@ -4,9 +4,11 @@ C:\Users\Dayana Franco\Documents\ITESI\Segundo Semestre\Contabilidad\Quinto Tema
 C:\Users\Dayana Franco\Documents\ITESI\Segundo Semestre\Contabilidad\Quinto Tema\Tienda de Abarrotes\Tienda de Abarrotes\bin\Debug\Tienda de Abarrotes.pdb
 C:\Users\Dayana Franco\Documents\ITESI\Segundo Semestre\Contabilidad\Quinto Tema\Tienda de Abarrotes\Tienda de Abarrotes\obj\Debug\Tienda de Abarrotes.csproj.AssemblyReference.cache
 C:\Users\Dayana Franco\Documents\ITESI\Segundo Semestre\Contabilidad\Quinto Tema\Tienda de Abarrotes\Tienda de Abarrotes\obj\Debug\Tienda de Abarrotes.csproj.SuggestedBindingRedirects.cache
-C:\Users\Dayana Franco\Documents\ITESI\Segundo Semestre\Contabilidad\Quinto Tema\Tienda de Abarrotes\Tienda de Abarrotes\obj\Debug\Tienda_de_Abarrotes.frmMovimientos.resources
 C:\Users\Dayana Franco\Documents\ITESI\Segundo Semestre\Contabilidad\Quinto Tema\Tienda de Abarrotes\Tienda de Abarrotes\obj\Debug\Tienda_de_Abarrotes.Properties.Resources.resources
 C:\Users\Dayana Franco\Documents\ITESI\Segundo Semestre\Contabilidad\Quinto Tema\Tienda de Abarrotes\Tienda de Abarrotes\obj\Debug\Tienda de Abarrotes.csproj.GenerateResource.cache
 C:\Users\Dayana Franco\Documents\ITESI\Segundo Semestre\Contabilidad\Quinto Tema\Tienda de Abarrotes\Tienda de Abarrotes\obj\Debug\Tienda de Abarrotes.csproj.CoreCompileInputs.cache
 C:\Users\Dayana Franco\Documents\ITESI\Segundo Semestre\Contabilidad\Quinto Tema\Tienda de Abarrotes\Tienda de Abarrotes\obj\Debug\Tienda de Abarrotes.exe
 C:\Users\Dayana Franco\Documents\ITESI\Segundo Semestre\Contabilidad\Quinto Tema\Tienda de Abarrotes\Tienda de Abarrotes\obj\Debug\Tienda de Abarrotes.pdb
+C:\Users\Dayana Franco\Documents\ITESI\Segundo Semestre\Contabilidad\Quinto Tema\Tienda de Abarrotes\Tienda de Abarrotes\obj\Debug\Tienda_de_Abarrotes.Form1.resources
+C:\Users\Dayana Franco\Documents\ITESI\Segundo Semestre\Contabilidad\Quinto Tema\Tienda de Abarrotes\Tienda de Abarrotes\obj\Debug\Tienda_de_Abarrotes.frmInventario.resources
+C:\Users\Dayana Franco\Documents\ITESI\Segundo Semestre\Contabilidad\Quinto Tema\Tienda de Abarrotes\Tienda de Abarrotes\obj\Debug\Tienda_de_Abarrotes.frmMenu.resources
