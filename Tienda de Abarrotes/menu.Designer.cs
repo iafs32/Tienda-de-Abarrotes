@@ -52,6 +52,7 @@
             this.btnMovimientos.TabIndex = 1;
             this.btnMovimientos.Text = "Nuevo movimiento";
             this.btnMovimientos.UseVisualStyleBackColor = true;
+            this.btnMovimientos.Click += new System.EventHandler(this.btnMovimientos_Click);
             // 
             // btnInventario
             // 

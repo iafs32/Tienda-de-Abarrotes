@@ -12,3 +12,4 @@ C:\Users\Dayana Franco\Documents\ITESI\Segundo Semestre\Contabilidad\Quinto Tema
 C:\Users\Dayana Franco\Documents\ITESI\Segundo Semestre\Contabilidad\Quinto Tema\Tienda de Abarrotes\Tienda de Abarrotes\obj\Debug\Tienda_de_Abarrotes.Form1.resources
 C:\Users\Dayana Franco\Documents\ITESI\Segundo Semestre\Contabilidad\Quinto Tema\Tienda de Abarrotes\Tienda de Abarrotes\obj\Debug\Tienda_de_Abarrotes.frmInventario.resources
 C:\Users\Dayana Franco\Documents\ITESI\Segundo Semestre\Contabilidad\Quinto Tema\Tienda de Abarrotes\Tienda de Abarrotes\obj\Debug\Tienda_de_Abarrotes.frmMenu.resources
+C:\Users\Dayana Franco\Documents\ITESI\Segundo Semestre\Contabilidad\Quinto Tema\Tienda de Abarrotes\Tienda de Abarrotes\obj\Debug\Tienda_de_Abarrotes.frmMovimientos.resources

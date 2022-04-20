@@ -28,5 +28,12 @@ namespace Tienda_de_Abarrotes
             frmInventario frmInventario = new frmInventario();
             frmInventario.Show();
         }
+
+        private void btnMovimientos_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            frmMovimientos frmMovimientos = new frmMovimientos();
+            frmMovimientos.Show();
+        }
     }
 }
