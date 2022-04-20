@@ -23,5 +23,10 @@ namespace Tienda_de_Abarrotes
             this.inventarioTableAdapter.Fill(this.tiendaDeAbarrotesDataSet.Inventario);
 
         }
+
+        private void btnBuscar_Click(object sender, EventArgs e)
+        {
+            this.inventarioTableAdapter.Buscar(tiendaDeAbarrotesDataSet.Inventario, txbNombre.Text);
+        }
     }
 }
