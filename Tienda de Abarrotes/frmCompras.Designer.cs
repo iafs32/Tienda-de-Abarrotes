@@ -1,7 +1,7 @@
 ﻿
-namespace ProyectoTienda
+namespace Tienda_de_Abarrotes
 {
-    partial class Form1
+    partial class frmCompras
     {
         /// <summary>
         /// Variable del diseñador necesaria.
@@ -34,37 +34,46 @@ namespace ProyectoTienda
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.BtnTtl = new System.Windows.Forms.Button();
+            this.btnFinalizar = new System.Windows.Forms.Button();
             this.TxtProducto = new System.Windows.Forms.TextBox();
             this.TxtPiezas = new System.Windows.Forms.TextBox();
             this.TxtValor = new System.Windows.Forms.TextBox();
-            this.Lbl1 = new System.Windows.Forms.Label();
             this.Lbl2 = new System.Windows.Forms.Label();
             this.Lbl4 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
+            this.LblFecha = new System.Windows.Forms.Label();
+            this.btnAgregar = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.dataGridView3 = new System.Windows.Forms.DataGridView();
+            this.lblPago = new System.Windows.Forms.Label();
+            this.rdbCaja = new System.Windows.Forms.RadioButton();
+            this.rdbBancos = new System.Windows.Forms.RadioButton();
+            this.idDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.fechaDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.valorDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.bancosBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.tiendaDeAbarrotesDataSet = new Tienda_de_Abarrotes.tiendaDeAbarrotesDataSet();
+            this.idDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.fechaDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.valorDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cajaBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.fechaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.valorDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.comprasBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.tiendaDeAbarrotesDataSet = new ProyectoTienda.tiendaDeAbarrotesDataSet();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.idDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nombreDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.piezasDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.precioUnitarioDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.valorTotalDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.inventarioBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.LblFecha = new System.Windows.Forms.Label();
-            this.BtnAc = new System.Windows.Forms.Button();
-            this.label5 = new System.Windows.Forms.Label();
-            this.TxtUnidades = new System.Windows.Forms.TextBox();
-            this.comprasTableAdapter = new ProyectoTienda.tiendaDeAbarrotesDataSetTableAdapters.ComprasTableAdapter();
-            this.inventarioTableAdapter = new ProyectoTienda.tiendaDeAbarrotesDataSetTableAdapters.InventarioTableAdapter();
+            this.comprasTableAdapter = new Tienda_de_Abarrotes.tiendaDeAbarrotesDataSetTableAdapters.ComprasTableAdapter();
+            this.inventarioTableAdapter = new Tienda_de_Abarrotes.tiendaDeAbarrotesDataSetTableAdapters.InventarioTableAdapter();
+            this.cajaTableAdapter = new Tienda_de_Abarrotes.tiendaDeAbarrotesDataSetTableAdapters.CajaTableAdapter();
+            this.bancosTableAdapter = new Tienda_de_Abarrotes.tiendaDeAbarrotesDataSetTableAdapters.BancosTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.comprasBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tiendaDeAbarrotesDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bancosBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tiendaDeAbarrotesDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cajaBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.comprasBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.inventarioBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
@@ -72,7 +81,7 @@ namespace ProyectoTienda
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(335, 25);
+            this.label1.Location = new System.Drawing.Point(299, 25);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(118, 29);
             this.label1.TabIndex = 0;
@@ -81,7 +90,7 @@ namespace ProyectoTienda
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(33, 78);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(125, 29);
@@ -91,7 +100,7 @@ namespace ProyectoTienda
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(202, 78);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(98, 29);
@@ -101,53 +110,44 @@ namespace ProyectoTienda
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(361, 78);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(81, 29);
             this.label4.TabIndex = 3;
             this.label4.Text = "Valor:";
             // 
-            // BtnTtl
+            // btnFinalizar
             // 
-            this.BtnTtl.Location = new System.Drawing.Point(156, 186);
-            this.BtnTtl.Name = "BtnTtl";
-            this.BtnTtl.Size = new System.Drawing.Size(120, 60);
-            this.BtnTtl.TabIndex = 7;
-            this.BtnTtl.Text = "TOTAL";
-            this.BtnTtl.UseVisualStyleBackColor = true;
-            this.BtnTtl.Click += new System.EventHandler(this.BtnTtl_Click);
+            this.btnFinalizar.Location = new System.Drawing.Point(207, 204);
+            this.btnFinalizar.Name = "btnFinalizar";
+            this.btnFinalizar.Size = new System.Drawing.Size(138, 38);
+            this.btnFinalizar.TabIndex = 7;
+            this.btnFinalizar.Text = "Finalizar";
+            this.btnFinalizar.UseVisualStyleBackColor = true;
+            this.btnFinalizar.Click += new System.EventHandler(this.BtnTtl_Click);
             // 
             // TxtProducto
             // 
-            this.TxtProducto.Location = new System.Drawing.Point(37, 106);
+            this.TxtProducto.Location = new System.Drawing.Point(38, 110);
             this.TxtProducto.Name = "TxtProducto";
-            this.TxtProducto.Size = new System.Drawing.Size(100, 26);
+            this.TxtProducto.Size = new System.Drawing.Size(121, 26);
             this.TxtProducto.TabIndex = 9;
             this.TxtProducto.TextChanged += new System.EventHandler(this.TxtProducto_TextChanged);
             // 
             // TxtPiezas
             // 
-            this.TxtPiezas.Location = new System.Drawing.Point(206, 110);
+            this.TxtPiezas.Location = new System.Drawing.Point(207, 110);
             this.TxtPiezas.Name = "TxtPiezas";
-            this.TxtPiezas.Size = new System.Drawing.Size(100, 26);
+            this.TxtPiezas.Size = new System.Drawing.Size(120, 26);
             this.TxtPiezas.TabIndex = 10;
             // 
             // TxtValor
             // 
             this.TxtValor.Location = new System.Drawing.Point(366, 110);
             this.TxtValor.Name = "TxtValor";
-            this.TxtValor.Size = new System.Drawing.Size(100, 26);
+            this.TxtValor.Size = new System.Drawing.Size(120, 26);
             this.TxtValor.TabIndex = 11;
-            // 
-            // Lbl1
-            // 
-            this.Lbl1.AutoSize = true;
-            this.Lbl1.Location = new System.Drawing.Point(38, 153);
-            this.Lbl1.Name = "Lbl1";
-            this.Lbl1.Size = new System.Drawing.Size(27, 20);
-            this.Lbl1.TabIndex = 12;
-            this.Lbl1.Text = "llbl";
             // 
             // Lbl2
             // 
@@ -160,10 +160,10 @@ namespace ProyectoTienda
             // Lbl4
             // 
             this.Lbl4.AutoSize = true;
-            this.Lbl4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lbl4.Location = new System.Drawing.Point(536, 116);
+            this.Lbl4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lbl4.Location = new System.Drawing.Point(610, 331);
             this.Lbl4.Name = "Lbl4";
-            this.Lbl4.Size = new System.Drawing.Size(85, 29);
+            this.Lbl4.Size = new System.Drawing.Size(79, 29);
             this.Lbl4.TabIndex = 17;
             this.Lbl4.Text = "label5";
             // 
@@ -171,11 +171,32 @@ namespace ProyectoTienda
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(523, 78);
+            this.label6.Location = new System.Drawing.Point(466, 331);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(131, 29);
+            this.label6.Size = new System.Drawing.Size(138, 29);
             this.label6.TabIndex = 18;
-            this.label6.Text = "Valor total";
+            this.label6.Text = "Valor total:";
+            // 
+            // LblFecha
+            // 
+            this.LblFecha.AutoSize = true;
+            this.LblFecha.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblFecha.Location = new System.Drawing.Point(501, 9);
+            this.LblFecha.Name = "LblFecha";
+            this.LblFecha.Size = new System.Drawing.Size(51, 20);
+            this.LblFecha.TabIndex = 21;
+            this.LblFecha.Text = "label5";
+            this.LblFecha.Click += new System.EventHandler(this.LblFecha_Click);
+            // 
+            // btnAgregar
+            // 
+            this.btnAgregar.Location = new System.Drawing.Point(38, 204);
+            this.btnAgregar.Name = "btnAgregar";
+            this.btnAgregar.Size = new System.Drawing.Size(138, 38);
+            this.btnAgregar.TabIndex = 22;
+            this.btnAgregar.Text = "Agegar";
+            this.btnAgregar.UseVisualStyleBackColor = true;
+            this.btnAgregar.Click += new System.EventHandler(this.BtnAc_Click);
             // 
             // dataGridView1
             // 
@@ -186,12 +207,138 @@ namespace ProyectoTienda
             this.fechaDataGridViewTextBoxColumn,
             this.valorDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.comprasBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 248);
+            this.dataGridView1.Location = new System.Drawing.Point(38, 369);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 62;
             this.dataGridView1.RowTemplate.Height = 28;
-            this.dataGridView1.Size = new System.Drawing.Size(678, 154);
-            this.dataGridView1.TabIndex = 19;
+            this.dataGridView1.Size = new System.Drawing.Size(514, 165);
+            this.dataGridView1.TabIndex = 23;
+            // 
+            // dataGridView2
+            // 
+            this.dataGridView2.AutoGenerateColumns = false;
+            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.idDataGridViewTextBoxColumn1,
+            this.fechaDataGridViewTextBoxColumn1,
+            this.valorDataGridViewTextBoxColumn1});
+            this.dataGridView2.DataSource = this.cajaBindingSource;
+            this.dataGridView2.Location = new System.Drawing.Point(38, 541);
+            this.dataGridView2.Name = "dataGridView2";
+            this.dataGridView2.RowHeadersWidth = 62;
+            this.dataGridView2.RowTemplate.Height = 28;
+            this.dataGridView2.Size = new System.Drawing.Size(514, 150);
+            this.dataGridView2.TabIndex = 24;
+            // 
+            // dataGridView3
+            // 
+            this.dataGridView3.AutoGenerateColumns = false;
+            this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView3.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.idDataGridViewTextBoxColumn2,
+            this.fechaDataGridViewTextBoxColumn2,
+            this.valorDataGridViewTextBoxColumn2});
+            this.dataGridView3.DataSource = this.bancosBindingSource;
+            this.dataGridView3.Location = new System.Drawing.Point(38, 697);
+            this.dataGridView3.Name = "dataGridView3";
+            this.dataGridView3.RowHeadersWidth = 62;
+            this.dataGridView3.RowTemplate.Height = 28;
+            this.dataGridView3.Size = new System.Drawing.Size(514, 150);
+            this.dataGridView3.TabIndex = 25;
+            // 
+            // lblPago
+            // 
+            this.lblPago.AutoSize = true;
+            this.lblPago.Location = new System.Drawing.Point(34, 258);
+            this.lblPago.Name = "lblPago";
+            this.lblPago.Size = new System.Drawing.Size(119, 20);
+            this.lblPago.TabIndex = 26;
+            this.lblPago.Text = "Medio de Pago:";
+            // 
+            // rdbCaja
+            // 
+            this.rdbCaja.AutoSize = true;
+            this.rdbCaja.Location = new System.Drawing.Point(38, 281);
+            this.rdbCaja.Name = "rdbCaja";
+            this.rdbCaja.Size = new System.Drawing.Size(91, 24);
+            this.rdbCaja.TabIndex = 27;
+            this.rdbCaja.TabStop = true;
+            this.rdbCaja.Text = "Efectivo";
+            this.rdbCaja.UseVisualStyleBackColor = true;
+            // 
+            // rdbBancos
+            // 
+            this.rdbBancos.AutoSize = true;
+            this.rdbBancos.Location = new System.Drawing.Point(38, 311);
+            this.rdbBancos.Name = "rdbBancos";
+            this.rdbBancos.Size = new System.Drawing.Size(131, 24);
+            this.rdbBancos.TabIndex = 28;
+            this.rdbBancos.TabStop = true;
+            this.rdbBancos.Text = "Transferencia";
+            this.rdbBancos.UseVisualStyleBackColor = true;
+            // 
+            // idDataGridViewTextBoxColumn2
+            // 
+            this.idDataGridViewTextBoxColumn2.DataPropertyName = "Id";
+            this.idDataGridViewTextBoxColumn2.HeaderText = "Id";
+            this.idDataGridViewTextBoxColumn2.MinimumWidth = 8;
+            this.idDataGridViewTextBoxColumn2.Name = "idDataGridViewTextBoxColumn2";
+            this.idDataGridViewTextBoxColumn2.Width = 150;
+            // 
+            // fechaDataGridViewTextBoxColumn2
+            // 
+            this.fechaDataGridViewTextBoxColumn2.DataPropertyName = "Fecha";
+            this.fechaDataGridViewTextBoxColumn2.HeaderText = "Fecha";
+            this.fechaDataGridViewTextBoxColumn2.MinimumWidth = 8;
+            this.fechaDataGridViewTextBoxColumn2.Name = "fechaDataGridViewTextBoxColumn2";
+            this.fechaDataGridViewTextBoxColumn2.Width = 150;
+            // 
+            // valorDataGridViewTextBoxColumn2
+            // 
+            this.valorDataGridViewTextBoxColumn2.DataPropertyName = "Valor";
+            this.valorDataGridViewTextBoxColumn2.HeaderText = "Valor";
+            this.valorDataGridViewTextBoxColumn2.MinimumWidth = 8;
+            this.valorDataGridViewTextBoxColumn2.Name = "valorDataGridViewTextBoxColumn2";
+            this.valorDataGridViewTextBoxColumn2.Width = 150;
+            // 
+            // bancosBindingSource
+            // 
+            this.bancosBindingSource.DataMember = "Bancos";
+            this.bancosBindingSource.DataSource = this.tiendaDeAbarrotesDataSet;
+            // 
+            // tiendaDeAbarrotesDataSet
+            // 
+            this.tiendaDeAbarrotesDataSet.DataSetName = "tiendaDeAbarrotesDataSet";
+            this.tiendaDeAbarrotesDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // idDataGridViewTextBoxColumn1
+            // 
+            this.idDataGridViewTextBoxColumn1.DataPropertyName = "Id";
+            this.idDataGridViewTextBoxColumn1.HeaderText = "Id";
+            this.idDataGridViewTextBoxColumn1.MinimumWidth = 8;
+            this.idDataGridViewTextBoxColumn1.Name = "idDataGridViewTextBoxColumn1";
+            this.idDataGridViewTextBoxColumn1.Width = 150;
+            // 
+            // fechaDataGridViewTextBoxColumn1
+            // 
+            this.fechaDataGridViewTextBoxColumn1.DataPropertyName = "Fecha";
+            this.fechaDataGridViewTextBoxColumn1.HeaderText = "Fecha";
+            this.fechaDataGridViewTextBoxColumn1.MinimumWidth = 8;
+            this.fechaDataGridViewTextBoxColumn1.Name = "fechaDataGridViewTextBoxColumn1";
+            this.fechaDataGridViewTextBoxColumn1.Width = 150;
+            // 
+            // valorDataGridViewTextBoxColumn1
+            // 
+            this.valorDataGridViewTextBoxColumn1.DataPropertyName = "Valor";
+            this.valorDataGridViewTextBoxColumn1.HeaderText = "Valor";
+            this.valorDataGridViewTextBoxColumn1.MinimumWidth = 8;
+            this.valorDataGridViewTextBoxColumn1.Name = "valorDataGridViewTextBoxColumn1";
+            this.valorDataGridViewTextBoxColumn1.Width = 150;
+            // 
+            // cajaBindingSource
+            // 
+            this.cajaBindingSource.DataMember = "Caja";
+            this.cajaBindingSource.DataSource = this.tiendaDeAbarrotesDataSet;
             // 
             // idDataGridViewTextBoxColumn
             // 
@@ -222,112 +369,10 @@ namespace ProyectoTienda
             this.comprasBindingSource.DataMember = "Compras";
             this.comprasBindingSource.DataSource = this.tiendaDeAbarrotesDataSet;
             // 
-            // tiendaDeAbarrotesDataSet
-            // 
-            this.tiendaDeAbarrotesDataSet.DataSetName = "tiendaDeAbarrotesDataSet";
-            this.tiendaDeAbarrotesDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // dataGridView2
-            // 
-            this.dataGridView2.AutoGenerateColumns = false;
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.idDataGridViewTextBoxColumn1,
-            this.nombreDataGridViewTextBoxColumn,
-            this.piezasDataGridViewTextBoxColumn,
-            this.precioUnitarioDataGridViewTextBoxColumn,
-            this.valorTotalDataGridViewTextBoxColumn});
-            this.dataGridView2.DataSource = this.inventarioBindingSource;
-            this.dataGridView2.Location = new System.Drawing.Point(12, 408);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.RowHeadersWidth = 62;
-            this.dataGridView2.RowTemplate.Height = 28;
-            this.dataGridView2.Size = new System.Drawing.Size(676, 150);
-            this.dataGridView2.TabIndex = 20;
-            this.dataGridView2.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellContentClick);
-            // 
-            // idDataGridViewTextBoxColumn1
-            // 
-            this.idDataGridViewTextBoxColumn1.DataPropertyName = "Id";
-            this.idDataGridViewTextBoxColumn1.HeaderText = "Id";
-            this.idDataGridViewTextBoxColumn1.MinimumWidth = 8;
-            this.idDataGridViewTextBoxColumn1.Name = "idDataGridViewTextBoxColumn1";
-            this.idDataGridViewTextBoxColumn1.Width = 150;
-            // 
-            // nombreDataGridViewTextBoxColumn
-            // 
-            this.nombreDataGridViewTextBoxColumn.DataPropertyName = "Nombre";
-            this.nombreDataGridViewTextBoxColumn.HeaderText = "Nombre";
-            this.nombreDataGridViewTextBoxColumn.MinimumWidth = 8;
-            this.nombreDataGridViewTextBoxColumn.Name = "nombreDataGridViewTextBoxColumn";
-            this.nombreDataGridViewTextBoxColumn.Width = 150;
-            // 
-            // piezasDataGridViewTextBoxColumn
-            // 
-            this.piezasDataGridViewTextBoxColumn.DataPropertyName = "Piezas";
-            this.piezasDataGridViewTextBoxColumn.HeaderText = "Piezas";
-            this.piezasDataGridViewTextBoxColumn.MinimumWidth = 8;
-            this.piezasDataGridViewTextBoxColumn.Name = "piezasDataGridViewTextBoxColumn";
-            this.piezasDataGridViewTextBoxColumn.Width = 150;
-            // 
-            // precioUnitarioDataGridViewTextBoxColumn
-            // 
-            this.precioUnitarioDataGridViewTextBoxColumn.DataPropertyName = "Precio_Unitario";
-            this.precioUnitarioDataGridViewTextBoxColumn.HeaderText = "Precio_Unitario";
-            this.precioUnitarioDataGridViewTextBoxColumn.MinimumWidth = 8;
-            this.precioUnitarioDataGridViewTextBoxColumn.Name = "precioUnitarioDataGridViewTextBoxColumn";
-            this.precioUnitarioDataGridViewTextBoxColumn.Width = 150;
-            // 
-            // valorTotalDataGridViewTextBoxColumn
-            // 
-            this.valorTotalDataGridViewTextBoxColumn.DataPropertyName = "Valor_Total";
-            this.valorTotalDataGridViewTextBoxColumn.HeaderText = "Valor_Total";
-            this.valorTotalDataGridViewTextBoxColumn.MinimumWidth = 8;
-            this.valorTotalDataGridViewTextBoxColumn.Name = "valorTotalDataGridViewTextBoxColumn";
-            this.valorTotalDataGridViewTextBoxColumn.Width = 150;
-            // 
             // inventarioBindingSource
             // 
             this.inventarioBindingSource.DataMember = "Inventario";
             this.inventarioBindingSource.DataSource = this.tiendaDeAbarrotesDataSet;
-            // 
-            // LblFecha
-            // 
-            this.LblFecha.AutoSize = true;
-            this.LblFecha.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblFecha.Location = new System.Drawing.Point(858, 486);
-            this.LblFecha.Name = "LblFecha";
-            this.LblFecha.Size = new System.Drawing.Size(85, 29);
-            this.LblFecha.TabIndex = 21;
-            this.LblFecha.Text = "label5";
-            this.LblFecha.Click += new System.EventHandler(this.LblFecha_Click);
-            // 
-            // BtnAc
-            // 
-            this.BtnAc.Location = new System.Drawing.Point(12, 186);
-            this.BtnAc.Name = "BtnAc";
-            this.BtnAc.Size = new System.Drawing.Size(95, 56);
-            this.BtnAc.TabIndex = 22;
-            this.BtnAc.Text = "Actualizar";
-            this.BtnAc.UseVisualStyleBackColor = true;
-            this.BtnAc.Click += new System.EventHandler(this.BtnAc_Click);
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(719, 78);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(124, 29);
-            this.label5.TabIndex = 23;
-            this.label5.Text = "Unidades";
-            // 
-            // TxtUnidades
-            // 
-            this.TxtUnidades.Location = new System.Drawing.Point(724, 120);
-            this.TxtUnidades.Name = "TxtUnidades";
-            this.TxtUnidades.Size = new System.Drawing.Size(100, 26);
-            this.TxtUnidades.TabIndex = 24;
             // 
             // comprasTableAdapter
             // 
@@ -337,36 +382,48 @@ namespace ProyectoTienda
             // 
             this.inventarioTableAdapter.ClearBeforeFill = true;
             // 
-            // Form1
+            // cajaTableAdapter
+            // 
+            this.cajaTableAdapter.ClearBeforeFill = true;
+            // 
+            // bancosTableAdapter
+            // 
+            this.bancosTableAdapter.ClearBeforeFill = true;
+            // 
+            // frmCompras
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1076, 559);
-            this.Controls.Add(this.TxtUnidades);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.BtnAc);
-            this.Controls.Add(this.LblFecha);
+            this.ClientSize = new System.Drawing.Size(714, 901);
+            this.Controls.Add(this.rdbBancos);
+            this.Controls.Add(this.rdbCaja);
+            this.Controls.Add(this.lblPago);
+            this.Controls.Add(this.dataGridView3);
             this.Controls.Add(this.dataGridView2);
             this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.btnAgregar);
+            this.Controls.Add(this.LblFecha);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.Lbl4);
             this.Controls.Add(this.Lbl2);
-            this.Controls.Add(this.Lbl1);
             this.Controls.Add(this.TxtValor);
             this.Controls.Add(this.TxtPiezas);
             this.Controls.Add(this.TxtProducto);
-            this.Controls.Add(this.BtnTtl);
+            this.Controls.Add(this.btnFinalizar);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Name = "Form1";
+            this.Name = "frmCompras";
             this.Text = "Compras";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.comprasBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tiendaDeAbarrotesDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bancosBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tiendaDeAbarrotesDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cajaBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.comprasBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.inventarioBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -379,33 +436,39 @@ namespace ProyectoTienda
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Button BtnTtl;
+        private System.Windows.Forms.Button btnFinalizar;
         private System.Windows.Forms.TextBox TxtProducto;
         private System.Windows.Forms.TextBox TxtPiezas;
         private System.Windows.Forms.TextBox TxtValor;
-        private System.Windows.Forms.Label Lbl1;
         private System.Windows.Forms.Label Lbl2;
         private System.Windows.Forms.Label Lbl4;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private tiendaDeAbarrotesDataSet tiendaDeAbarrotesDataSet;
+        private Tienda_de_Abarrotes.tiendaDeAbarrotesDataSet tiendaDeAbarrotesDataSet;
         private System.Windows.Forms.BindingSource comprasBindingSource;
-        private tiendaDeAbarrotesDataSetTableAdapters.ComprasTableAdapter comprasTableAdapter;
+        private Tienda_de_Abarrotes.tiendaDeAbarrotesDataSetTableAdapters.ComprasTableAdapter comprasTableAdapter;
+        private System.Windows.Forms.BindingSource inventarioBindingSource;
+        private Tienda_de_Abarrotes.tiendaDeAbarrotesDataSetTableAdapters.InventarioTableAdapter inventarioTableAdapter;
+        private System.Windows.Forms.Label LblFecha;
+        private System.Windows.Forms.Button btnAgregar;
+        private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.DataGridViewTextBoxColumn idDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn fechaDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn valorDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridView dataGridView2;
-        private System.Windows.Forms.BindingSource inventarioBindingSource;
-        private tiendaDeAbarrotesDataSetTableAdapters.InventarioTableAdapter inventarioTableAdapter;
+        private System.Windows.Forms.BindingSource cajaBindingSource;
+        private tiendaDeAbarrotesDataSetTableAdapters.CajaTableAdapter cajaTableAdapter;
         private System.Windows.Forms.DataGridViewTextBoxColumn idDataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn nombreDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn piezasDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn precioUnitarioDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn valorTotalDataGridViewTextBoxColumn;
-        private System.Windows.Forms.Label LblFecha;
-        private System.Windows.Forms.Button BtnAc;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox TxtUnidades;
+        private System.Windows.Forms.DataGridViewTextBoxColumn fechaDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn valorDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridView dataGridView3;
+        private System.Windows.Forms.BindingSource bancosBindingSource;
+        private tiendaDeAbarrotesDataSetTableAdapters.BancosTableAdapter bancosTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idDataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn fechaDataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn valorDataGridViewTextBoxColumn2;
+        private System.Windows.Forms.Label lblPago;
+        private System.Windows.Forms.RadioButton rdbCaja;
+        private System.Windows.Forms.RadioButton rdbBancos;
     }
 }
 

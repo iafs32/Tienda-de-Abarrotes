@@ -8,27 +8,27 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ProyectoTienda
+namespace Tienda_de_Abarrotes
 {
-    public partial class Form1 : Form
+    public partial class frmCompras : Form
     {
-      
-        public Form1()
+        public double Total = 0;
+
+        public frmCompras()
         {
             InitializeComponent();
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            // TODO: esta línea de código carga datos en la tabla 'tiendaDeAbarrotesDataSet.Inventario' Puede moverla o quitarla según sea necesario.
-            this.inventarioTableAdapter.Fill(this.tiendaDeAbarrotesDataSet.Inventario);
-            // TODO: esta línea de código carga datos en la tabla 'tiendaDeAbarrotesDataSet.Compras' Puede moverla o quitarla según sea necesario.
+            this.bancosTableAdapter.Fill(this.tiendaDeAbarrotesDataSet.Bancos);
+            this.cajaTableAdapter.Fill(this.tiendaDeAbarrotesDataSet.Caja);
             this.comprasTableAdapter.Fill(this.tiendaDeAbarrotesDataSet.Compras);
+
             LblFecha.Text = DateTime.Now.ToLongDateString();
-            Lbl1.Text = " ";
             Lbl2.Text = " ";
             Lbl4.Text = " ";
-            
+            rdbCaja.Checked = true;
         }
         
            
@@ -40,13 +40,20 @@ namespace ProyectoTienda
 
         private void BtnTtl_Click(object sender, EventArgs e)
         {
-            if (TxtValor.Text == ""||TxtPiezas.Text=="") { MessageBox.Show("Porfavor llene los datos"); }
-            double Val = Convert.ToDouble(TxtValor.Text);
-            double Pza = Convert.ToDouble(TxtPiezas.Text);
-            double Total = Val * Pza;
-            Lbl4.Text = Total.ToString();
-            Lbl2.Text = "la compra de hoy  " + TxtProducto.Text +" $ "+ Total;
-            
+            this.inventarioTableAdapter.Fill(this.tiendaDeAbarrotesDataSet.Inventario);
+            this.comprasTableAdapter.Insertar(Convert.ToDateTime(LblFecha.Text), Convert.ToDecimal(Lbl4.Text));
+            this.comprasTableAdapter.Fill(this.tiendaDeAbarrotesDataSet.Compras);
+
+            if (rdbCaja.Checked == true)
+            {
+                this.cajaTableAdapter.Insertar(Convert.ToDateTime(LblFecha.Text), Convert.ToDecimal(Lbl4.Text)*-1);
+                this.cajaTableAdapter.Fill(this.tiendaDeAbarrotesDataSet.Caja);
+            }
+            else if (rdbBancos.Checked == true)
+            {
+                this.bancosTableAdapter.Insertar(Convert.ToDateTime(LblFecha.Text), Convert.ToDecimal(Lbl4.Text)*-1);
+                this.bancosTableAdapter.Fill(this.tiendaDeAbarrotesDataSet.Bancos);
+            }
         }
 
         private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -61,19 +68,21 @@ namespace ProyectoTienda
 
         private void BtnAc_Click(object sender, EventArgs e)
         {
-           // if (TxtUnidades.Text == "") { MessageBox.Show("Porfavor actualice las unidades"); }
-            //int Uni = Convert.ToInt32(TxtUnidades.Text);
-            //this.inventarioTableAdapter.Modificar(Uni, Uni);
-            this.inventarioTableAdapter.Fill(this.tiendaDeAbarrotesDataSet.Inventario);
-            this.comprasTableAdapter.Insertar(Convert.ToDateTime(LblFecha.Text), Convert.ToDecimal(Lbl4.Text));
-            this.comprasTableAdapter.Fill(this.tiendaDeAbarrotesDataSet.Compras);
-            
-            
+            if (TxtValor.Text == "" || TxtPiezas.Text == "") { MessageBox.Show("Porfavor llene los datos"); }
+            double Val = Convert.ToDouble(TxtValor.Text);
+            double Pza = Convert.ToDouble(TxtPiezas.Text);
+            Total = Total + (Val * Pza);
+            string strTotal = Convert.ToString(Total);
+            Lbl4.Text = strTotal;
+
+            TxtProducto.Text = "";
+            TxtPiezas.Text = "";
+            TxtValor.Text = "";
         }
 
         private void TxtProducto_TextChanged(object sender, EventArgs e)
         {
-
+            
         }
 
         
