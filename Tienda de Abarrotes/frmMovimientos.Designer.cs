@@ -73,6 +73,7 @@
             this.btnContinuar.TabIndex = 3;
             this.btnContinuar.Text = "Continuar";
             this.btnContinuar.UseVisualStyleBackColor = true;
+            this.btnContinuar.Click += new System.EventHandler(this.btnContinuar_Click);
             // 
             // frmMovimientos
             // 

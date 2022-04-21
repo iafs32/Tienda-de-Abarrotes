@@ -43,38 +43,23 @@ namespace Tienda_de_Abarrotes
             this.label6 = new System.Windows.Forms.Label();
             this.LblFecha = new System.Windows.Forms.Label();
             this.btnAgregar = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.dataGridView3 = new System.Windows.Forms.DataGridView();
             this.lblPago = new System.Windows.Forms.Label();
             this.rdbCaja = new System.Windows.Forms.RadioButton();
             this.rdbBancos = new System.Windows.Forms.RadioButton();
-            this.idDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.fechaDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.valorDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.bancosBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.tiendaDeAbarrotesDataSet = new Tienda_de_Abarrotes.tiendaDeAbarrotesDataSet();
-            this.idDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.fechaDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.valorDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cajaBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.fechaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.valorDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.comprasBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.inventarioBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.tiendaDeAbarrotesDataSet = new Tienda_de_Abarrotes.tiendaDeAbarrotesDataSet();
+            this.comprasBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.cajaBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.bancosBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.comprasTableAdapter = new Tienda_de_Abarrotes.tiendaDeAbarrotesDataSetTableAdapters.ComprasTableAdapter();
             this.inventarioTableAdapter = new Tienda_de_Abarrotes.tiendaDeAbarrotesDataSetTableAdapters.InventarioTableAdapter();
             this.cajaTableAdapter = new Tienda_de_Abarrotes.tiendaDeAbarrotesDataSetTableAdapters.CajaTableAdapter();
             this.bancosTableAdapter = new Tienda_de_Abarrotes.tiendaDeAbarrotesDataSetTableAdapters.BancosTableAdapter();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bancosBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tiendaDeAbarrotesDataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cajaBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.comprasBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.inventarioBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tiendaDeAbarrotesDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.comprasBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cajaBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bancosBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -198,54 +183,6 @@ namespace Tienda_de_Abarrotes
             this.btnAgregar.UseVisualStyleBackColor = true;
             this.btnAgregar.Click += new System.EventHandler(this.BtnAc_Click);
             // 
-            // dataGridView1
-            // 
-            this.dataGridView1.AutoGenerateColumns = false;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.idDataGridViewTextBoxColumn,
-            this.fechaDataGridViewTextBoxColumn,
-            this.valorDataGridViewTextBoxColumn});
-            this.dataGridView1.DataSource = this.comprasBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(38, 369);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 62;
-            this.dataGridView1.RowTemplate.Height = 28;
-            this.dataGridView1.Size = new System.Drawing.Size(514, 165);
-            this.dataGridView1.TabIndex = 23;
-            // 
-            // dataGridView2
-            // 
-            this.dataGridView2.AutoGenerateColumns = false;
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.idDataGridViewTextBoxColumn1,
-            this.fechaDataGridViewTextBoxColumn1,
-            this.valorDataGridViewTextBoxColumn1});
-            this.dataGridView2.DataSource = this.cajaBindingSource;
-            this.dataGridView2.Location = new System.Drawing.Point(38, 541);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.RowHeadersWidth = 62;
-            this.dataGridView2.RowTemplate.Height = 28;
-            this.dataGridView2.Size = new System.Drawing.Size(514, 150);
-            this.dataGridView2.TabIndex = 24;
-            // 
-            // dataGridView3
-            // 
-            this.dataGridView3.AutoGenerateColumns = false;
-            this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView3.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.idDataGridViewTextBoxColumn2,
-            this.fechaDataGridViewTextBoxColumn2,
-            this.valorDataGridViewTextBoxColumn2});
-            this.dataGridView3.DataSource = this.bancosBindingSource;
-            this.dataGridView3.Location = new System.Drawing.Point(38, 697);
-            this.dataGridView3.Name = "dataGridView3";
-            this.dataGridView3.RowHeadersWidth = 62;
-            this.dataGridView3.RowTemplate.Height = 28;
-            this.dataGridView3.Size = new System.Drawing.Size(514, 150);
-            this.dataGridView3.TabIndex = 25;
-            // 
             // lblPago
             // 
             this.lblPago.AutoSize = true;
@@ -277,102 +214,30 @@ namespace Tienda_de_Abarrotes
             this.rdbBancos.Text = "Transferencia";
             this.rdbBancos.UseVisualStyleBackColor = true;
             // 
-            // idDataGridViewTextBoxColumn2
+            // inventarioBindingSource
             // 
-            this.idDataGridViewTextBoxColumn2.DataPropertyName = "Id";
-            this.idDataGridViewTextBoxColumn2.HeaderText = "Id";
-            this.idDataGridViewTextBoxColumn2.MinimumWidth = 8;
-            this.idDataGridViewTextBoxColumn2.Name = "idDataGridViewTextBoxColumn2";
-            this.idDataGridViewTextBoxColumn2.Width = 150;
-            // 
-            // fechaDataGridViewTextBoxColumn2
-            // 
-            this.fechaDataGridViewTextBoxColumn2.DataPropertyName = "Fecha";
-            this.fechaDataGridViewTextBoxColumn2.HeaderText = "Fecha";
-            this.fechaDataGridViewTextBoxColumn2.MinimumWidth = 8;
-            this.fechaDataGridViewTextBoxColumn2.Name = "fechaDataGridViewTextBoxColumn2";
-            this.fechaDataGridViewTextBoxColumn2.Width = 150;
-            // 
-            // valorDataGridViewTextBoxColumn2
-            // 
-            this.valorDataGridViewTextBoxColumn2.DataPropertyName = "Valor";
-            this.valorDataGridViewTextBoxColumn2.HeaderText = "Valor";
-            this.valorDataGridViewTextBoxColumn2.MinimumWidth = 8;
-            this.valorDataGridViewTextBoxColumn2.Name = "valorDataGridViewTextBoxColumn2";
-            this.valorDataGridViewTextBoxColumn2.Width = 150;
-            // 
-            // bancosBindingSource
-            // 
-            this.bancosBindingSource.DataMember = "Bancos";
-            this.bancosBindingSource.DataSource = this.tiendaDeAbarrotesDataSet;
+            this.inventarioBindingSource.DataMember = "Inventario";
+            this.inventarioBindingSource.DataSource = this.tiendaDeAbarrotesDataSet;
             // 
             // tiendaDeAbarrotesDataSet
             // 
             this.tiendaDeAbarrotesDataSet.DataSetName = "tiendaDeAbarrotesDataSet";
             this.tiendaDeAbarrotesDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // idDataGridViewTextBoxColumn1
+            // comprasBindingSource
             // 
-            this.idDataGridViewTextBoxColumn1.DataPropertyName = "Id";
-            this.idDataGridViewTextBoxColumn1.HeaderText = "Id";
-            this.idDataGridViewTextBoxColumn1.MinimumWidth = 8;
-            this.idDataGridViewTextBoxColumn1.Name = "idDataGridViewTextBoxColumn1";
-            this.idDataGridViewTextBoxColumn1.Width = 150;
-            // 
-            // fechaDataGridViewTextBoxColumn1
-            // 
-            this.fechaDataGridViewTextBoxColumn1.DataPropertyName = "Fecha";
-            this.fechaDataGridViewTextBoxColumn1.HeaderText = "Fecha";
-            this.fechaDataGridViewTextBoxColumn1.MinimumWidth = 8;
-            this.fechaDataGridViewTextBoxColumn1.Name = "fechaDataGridViewTextBoxColumn1";
-            this.fechaDataGridViewTextBoxColumn1.Width = 150;
-            // 
-            // valorDataGridViewTextBoxColumn1
-            // 
-            this.valorDataGridViewTextBoxColumn1.DataPropertyName = "Valor";
-            this.valorDataGridViewTextBoxColumn1.HeaderText = "Valor";
-            this.valorDataGridViewTextBoxColumn1.MinimumWidth = 8;
-            this.valorDataGridViewTextBoxColumn1.Name = "valorDataGridViewTextBoxColumn1";
-            this.valorDataGridViewTextBoxColumn1.Width = 150;
+            this.comprasBindingSource.DataMember = "Compras";
+            this.comprasBindingSource.DataSource = this.tiendaDeAbarrotesDataSet;
             // 
             // cajaBindingSource
             // 
             this.cajaBindingSource.DataMember = "Caja";
             this.cajaBindingSource.DataSource = this.tiendaDeAbarrotesDataSet;
             // 
-            // idDataGridViewTextBoxColumn
+            // bancosBindingSource
             // 
-            this.idDataGridViewTextBoxColumn.DataPropertyName = "Id";
-            this.idDataGridViewTextBoxColumn.HeaderText = "Id";
-            this.idDataGridViewTextBoxColumn.MinimumWidth = 8;
-            this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
-            this.idDataGridViewTextBoxColumn.Width = 150;
-            // 
-            // fechaDataGridViewTextBoxColumn
-            // 
-            this.fechaDataGridViewTextBoxColumn.DataPropertyName = "Fecha";
-            this.fechaDataGridViewTextBoxColumn.HeaderText = "Fecha";
-            this.fechaDataGridViewTextBoxColumn.MinimumWidth = 8;
-            this.fechaDataGridViewTextBoxColumn.Name = "fechaDataGridViewTextBoxColumn";
-            this.fechaDataGridViewTextBoxColumn.Width = 150;
-            // 
-            // valorDataGridViewTextBoxColumn
-            // 
-            this.valorDataGridViewTextBoxColumn.DataPropertyName = "Valor";
-            this.valorDataGridViewTextBoxColumn.HeaderText = "Valor";
-            this.valorDataGridViewTextBoxColumn.MinimumWidth = 8;
-            this.valorDataGridViewTextBoxColumn.Name = "valorDataGridViewTextBoxColumn";
-            this.valorDataGridViewTextBoxColumn.Width = 150;
-            // 
-            // comprasBindingSource
-            // 
-            this.comprasBindingSource.DataMember = "Compras";
-            this.comprasBindingSource.DataSource = this.tiendaDeAbarrotesDataSet;
-            // 
-            // inventarioBindingSource
-            // 
-            this.inventarioBindingSource.DataMember = "Inventario";
-            this.inventarioBindingSource.DataSource = this.tiendaDeAbarrotesDataSet;
+            this.bancosBindingSource.DataMember = "Bancos";
+            this.bancosBindingSource.DataSource = this.tiendaDeAbarrotesDataSet;
             // 
             // comprasTableAdapter
             // 
@@ -394,13 +259,10 @@ namespace Tienda_de_Abarrotes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(714, 901);
+            this.ClientSize = new System.Drawing.Size(714, 383);
             this.Controls.Add(this.rdbBancos);
             this.Controls.Add(this.rdbCaja);
             this.Controls.Add(this.lblPago);
-            this.Controls.Add(this.dataGridView3);
-            this.Controls.Add(this.dataGridView2);
-            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.btnAgregar);
             this.Controls.Add(this.LblFecha);
             this.Controls.Add(this.label6);
@@ -417,14 +279,11 @@ namespace Tienda_de_Abarrotes
             this.Name = "frmCompras";
             this.Text = "Compras";
             this.Load += new System.EventHandler(this.Form1_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bancosBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tiendaDeAbarrotesDataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cajaBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.comprasBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.inventarioBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tiendaDeAbarrotesDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.comprasBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cajaBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bancosBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -450,22 +309,10 @@ namespace Tienda_de_Abarrotes
         private Tienda_de_Abarrotes.tiendaDeAbarrotesDataSetTableAdapters.InventarioTableAdapter inventarioTableAdapter;
         private System.Windows.Forms.Label LblFecha;
         private System.Windows.Forms.Button btnAgregar;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn idDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn fechaDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn valorDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridView dataGridView2;
         private System.Windows.Forms.BindingSource cajaBindingSource;
         private tiendaDeAbarrotesDataSetTableAdapters.CajaTableAdapter cajaTableAdapter;
-        private System.Windows.Forms.DataGridViewTextBoxColumn idDataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn fechaDataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn valorDataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridView dataGridView3;
         private System.Windows.Forms.BindingSource bancosBindingSource;
         private tiendaDeAbarrotesDataSetTableAdapters.BancosTableAdapter bancosTableAdapter;
-        private System.Windows.Forms.DataGridViewTextBoxColumn idDataGridViewTextBoxColumn2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn fechaDataGridViewTextBoxColumn2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn valorDataGridViewTextBoxColumn2;
         private System.Windows.Forms.Label lblPago;
         private System.Windows.Forms.RadioButton rdbCaja;
         private System.Windows.Forms.RadioButton rdbBancos;

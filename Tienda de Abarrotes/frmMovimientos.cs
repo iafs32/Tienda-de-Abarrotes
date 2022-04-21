@@ -16,5 +16,19 @@ namespace Tienda_de_Abarrotes
         {
             InitializeComponent();
         }
+
+        private void btnContinuar_Click(object sender, EventArgs e)
+        {
+            if (rdbVenta.Checked == true)
+            {
+
+            }
+            else if (rdbCompra.Checked == true)
+            {
+                this.Hide();
+                frmCompras frmCompras = new frmCompras();
+                frmCompras.Show();
+            }
+        }
     }
 }

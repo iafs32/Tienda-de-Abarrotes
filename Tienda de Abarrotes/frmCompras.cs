@@ -13,6 +13,9 @@ namespace Tienda_de_Abarrotes
     public partial class frmCompras : Form
     {
         public double Total = 0;
+        int piezas;
+        int precioUnitario;
+        int valorTotal;
 
         public frmCompras()
         {
@@ -24,14 +27,13 @@ namespace Tienda_de_Abarrotes
             this.bancosTableAdapter.Fill(this.tiendaDeAbarrotesDataSet.Bancos);
             this.cajaTableAdapter.Fill(this.tiendaDeAbarrotesDataSet.Caja);
             this.comprasTableAdapter.Fill(this.tiendaDeAbarrotesDataSet.Compras);
+            this.inventarioTableAdapter.Fill(this.tiendaDeAbarrotesDataSet.Inventario);
 
             LblFecha.Text = DateTime.Now.ToLongDateString();
             Lbl2.Text = " ";
             Lbl4.Text = " ";
             rdbCaja.Checked = true;
         }
-        
-           
 
         private void CBProductos_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -54,6 +56,10 @@ namespace Tienda_de_Abarrotes
                 this.bancosTableAdapter.Insertar(Convert.ToDateTime(LblFecha.Text), Convert.ToDecimal(Lbl4.Text)*-1);
                 this.bancosTableAdapter.Fill(this.tiendaDeAbarrotesDataSet.Bancos);
             }
+
+            this.Close();
+            frmMenu frmMenu = new frmMenu();
+            frmMenu.Show();
         }
 
         private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -68,12 +74,21 @@ namespace Tienda_de_Abarrotes
 
         private void BtnAc_Click(object sender, EventArgs e)
         {
+
             if (TxtValor.Text == "" || TxtPiezas.Text == "") { MessageBox.Show("Porfavor llene los datos"); }
             double Val = Convert.ToDouble(TxtValor.Text);
             double Pza = Convert.ToDouble(TxtPiezas.Text);
             Total = Total + (Val * Pza);
             string strTotal = Convert.ToString(Total);
             Lbl4.Text = strTotal;
+
+            this.inventarioTableAdapter.Buscar(tiendaDeAbarrotesDataSet.Inventario, TxtProducto.Text);
+            piezas = Convert.ToInt32(dgvInventario.CurrentRow.Cells[2].Value.ToString());
+            piezas = piezas + Convert.ToInt32(TxtPiezas.Text);
+            precioUnitario = Convert.ToInt32(dgvInventario.CurrentRow.Cells[3].Value.ToString());
+            valorTotal = piezas * precioUnitario;
+            this.inventarioTableAdapter.ModificarPiezas(piezas, valorTotal, TxtProducto.Text);
+            this.inventarioTableAdapter.Fill(this.tiendaDeAbarrotesDataSet.Inventario);
 
             TxtProducto.Text = "";
             TxtPiezas.Text = "";
@@ -85,8 +100,16 @@ namespace Tienda_de_Abarrotes
             
         }
 
-        
+        private void btnPrueba_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            frmMenu frmMenu = new frmMenu();
+            frmMenu.Show();
+        }
 
-       
+        private void dgvInventario_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
