@@ -14,10 +14,9 @@ namespace Tienda_de_Abarrotes
         [STAThread]
         static void Main()
         {
-            
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmCompras());
+            Application.Run(new frmMenu());
         }
     }
 }
