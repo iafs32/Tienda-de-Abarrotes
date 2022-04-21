@@ -55,11 +55,18 @@ namespace Tienda_de_Abarrotes
             this.inventarioTableAdapter = new Tienda_de_Abarrotes.tiendaDeAbarrotesDataSetTableAdapters.InventarioTableAdapter();
             this.cajaTableAdapter = new Tienda_de_Abarrotes.tiendaDeAbarrotesDataSetTableAdapters.CajaTableAdapter();
             this.bancosTableAdapter = new Tienda_de_Abarrotes.tiendaDeAbarrotesDataSetTableAdapters.BancosTableAdapter();
+            this.dgvInventario = new System.Windows.Forms.DataGridView();
+            this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nombreDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.piezasDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.precioUnitarioDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.valorTotalDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.inventarioBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tiendaDeAbarrotesDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.comprasBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cajaBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bancosBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvInventario)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -255,11 +262,71 @@ namespace Tienda_de_Abarrotes
             // 
             this.bancosTableAdapter.ClearBeforeFill = true;
             // 
+            // dgvInventario
+            // 
+            this.dgvInventario.AutoGenerateColumns = false;
+            this.dgvInventario.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvInventario.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.idDataGridViewTextBoxColumn,
+            this.nombreDataGridViewTextBoxColumn,
+            this.piezasDataGridViewTextBoxColumn,
+            this.precioUnitarioDataGridViewTextBoxColumn,
+            this.valorTotalDataGridViewTextBoxColumn});
+            this.dgvInventario.DataSource = this.inventarioBindingSource;
+            this.dgvInventario.Location = new System.Drawing.Point(449, 155);
+            this.dgvInventario.Name = "dgvInventario";
+            this.dgvInventario.RowHeadersWidth = 62;
+            this.dgvInventario.RowTemplate.Height = 28;
+            this.dgvInventario.Size = new System.Drawing.Size(240, 150);
+            this.dgvInventario.TabIndex = 29;
+            this.dgvInventario.Visible = false;
+            // 
+            // idDataGridViewTextBoxColumn
+            // 
+            this.idDataGridViewTextBoxColumn.DataPropertyName = "Id";
+            this.idDataGridViewTextBoxColumn.HeaderText = "Id";
+            this.idDataGridViewTextBoxColumn.MinimumWidth = 8;
+            this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
+            this.idDataGridViewTextBoxColumn.Width = 150;
+            // 
+            // nombreDataGridViewTextBoxColumn
+            // 
+            this.nombreDataGridViewTextBoxColumn.DataPropertyName = "Nombre";
+            this.nombreDataGridViewTextBoxColumn.HeaderText = "Nombre";
+            this.nombreDataGridViewTextBoxColumn.MinimumWidth = 8;
+            this.nombreDataGridViewTextBoxColumn.Name = "nombreDataGridViewTextBoxColumn";
+            this.nombreDataGridViewTextBoxColumn.Width = 150;
+            // 
+            // piezasDataGridViewTextBoxColumn
+            // 
+            this.piezasDataGridViewTextBoxColumn.DataPropertyName = "Piezas";
+            this.piezasDataGridViewTextBoxColumn.HeaderText = "Piezas";
+            this.piezasDataGridViewTextBoxColumn.MinimumWidth = 8;
+            this.piezasDataGridViewTextBoxColumn.Name = "piezasDataGridViewTextBoxColumn";
+            this.piezasDataGridViewTextBoxColumn.Width = 150;
+            // 
+            // precioUnitarioDataGridViewTextBoxColumn
+            // 
+            this.precioUnitarioDataGridViewTextBoxColumn.DataPropertyName = "Precio_Unitario";
+            this.precioUnitarioDataGridViewTextBoxColumn.HeaderText = "Precio_Unitario";
+            this.precioUnitarioDataGridViewTextBoxColumn.MinimumWidth = 8;
+            this.precioUnitarioDataGridViewTextBoxColumn.Name = "precioUnitarioDataGridViewTextBoxColumn";
+            this.precioUnitarioDataGridViewTextBoxColumn.Width = 150;
+            // 
+            // valorTotalDataGridViewTextBoxColumn
+            // 
+            this.valorTotalDataGridViewTextBoxColumn.DataPropertyName = "Valor_Total";
+            this.valorTotalDataGridViewTextBoxColumn.HeaderText = "Valor_Total";
+            this.valorTotalDataGridViewTextBoxColumn.MinimumWidth = 8;
+            this.valorTotalDataGridViewTextBoxColumn.Name = "valorTotalDataGridViewTextBoxColumn";
+            this.valorTotalDataGridViewTextBoxColumn.Width = 150;
+            // 
             // frmCompras
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(714, 383);
+            this.Controls.Add(this.dgvInventario);
             this.Controls.Add(this.rdbBancos);
             this.Controls.Add(this.rdbCaja);
             this.Controls.Add(this.lblPago);
@@ -284,6 +351,7 @@ namespace Tienda_de_Abarrotes
             ((System.ComponentModel.ISupportInitialize)(this.comprasBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cajaBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bancosBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvInventario)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -316,6 +384,12 @@ namespace Tienda_de_Abarrotes
         private System.Windows.Forms.Label lblPago;
         private System.Windows.Forms.RadioButton rdbCaja;
         private System.Windows.Forms.RadioButton rdbBancos;
+        private System.Windows.Forms.DataGridView dgvInventario;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nombreDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn piezasDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn precioUnitarioDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn valorTotalDataGridViewTextBoxColumn;
     }
 }
 

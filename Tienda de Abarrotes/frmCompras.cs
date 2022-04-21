@@ -33,6 +33,7 @@ namespace Tienda_de_Abarrotes
             Lbl2.Text = " ";
             Lbl4.Text = " ";
             rdbCaja.Checked = true;
+
         }
 
         private void CBProductos_SelectedIndexChanged(object sender, EventArgs e)
@@ -83,6 +84,7 @@ namespace Tienda_de_Abarrotes
             Lbl4.Text = strTotal;
 
             this.inventarioTableAdapter.Buscar(tiendaDeAbarrotesDataSet.Inventario, TxtProducto.Text);
+            
             piezas = Convert.ToInt32(dgvInventario.CurrentRow.Cells[2].Value.ToString());
             piezas = piezas + Convert.ToInt32(TxtPiezas.Text);
             precioUnitario = Convert.ToInt32(dgvInventario.CurrentRow.Cells[3].Value.ToString());
