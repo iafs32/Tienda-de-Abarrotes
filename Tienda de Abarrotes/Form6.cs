@@ -60,7 +60,7 @@ namespace Tienda_de_Abarrotes
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Form formulario = new Form3();
+            Form formulario = new Form2();
             formulario.Show();
             this.Dispose();
 
@@ -68,7 +68,7 @@ namespace Tienda_de_Abarrotes
 
         private void button3_Click(object sender, EventArgs e)
         {
-            Form formulario = new Form4();
+            Form formulario = new Form3();
             formulario.Show();
             this.Dispose();
 
@@ -76,7 +76,7 @@ namespace Tienda_de_Abarrotes
 
         private void button4_Click(object sender, EventArgs e)
         {
-            Form formulario = new Form5();
+            Form formulario = new Form4();
             formulario.Show();
             this.Dispose();
 
@@ -84,7 +84,7 @@ namespace Tienda_de_Abarrotes
 
         private void button5_Click(object sender, EventArgs e)
         {
-            Form formulario = new Form6();
+            Form formulario = new Form5();
             formulario.Show();
             this.Dispose();
 

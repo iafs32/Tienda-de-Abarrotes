@@ -44,7 +44,7 @@ namespace Tienda_de_Abarrotes
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(12, 9);
+            this.label1.Location = new System.Drawing.Point(12, 31);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(201, 31);
             this.label1.TabIndex = 0;
@@ -53,7 +53,7 @@ namespace Tienda_de_Abarrotes
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(18, 63);
+            this.button1.Location = new System.Drawing.Point(18, 85);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(195, 51);
             this.button1.TabIndex = 1;
@@ -64,7 +64,7 @@ namespace Tienda_de_Abarrotes
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(18, 120);
+            this.button2.Location = new System.Drawing.Point(18, 142);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(195, 51);
             this.button2.TabIndex = 2;
@@ -78,7 +78,7 @@ namespace Tienda_de_Abarrotes
             this.BancoDGV.AllowUserToDeleteRows = false;
             this.BancoDGV.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.BancoDGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.BancoDGV.Location = new System.Drawing.Point(232, 12);
+            this.BancoDGV.Location = new System.Drawing.Point(232, 34);
             this.BancoDGV.Name = "BancoDGV";
             this.BancoDGV.ReadOnly = true;
             this.BancoDGV.Size = new System.Drawing.Size(556, 387);
@@ -88,7 +88,7 @@ namespace Tienda_de_Abarrotes
             // button3
             // 
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(18, 177);
+            this.button3.Location = new System.Drawing.Point(18, 199);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(195, 51);
             this.button3.TabIndex = 4;
@@ -99,7 +99,7 @@ namespace Tienda_de_Abarrotes
             // button4
             // 
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(18, 234);
+            this.button4.Location = new System.Drawing.Point(18, 256);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(195, 51);
             this.button4.TabIndex = 5;
@@ -110,7 +110,7 @@ namespace Tienda_de_Abarrotes
             // button5
             // 
             this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.Location = new System.Drawing.Point(18, 291);
+            this.button5.Location = new System.Drawing.Point(18, 313);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(195, 51);
             this.button5.TabIndex = 6;
@@ -121,7 +121,7 @@ namespace Tienda_de_Abarrotes
             // button6
             // 
             this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.Location = new System.Drawing.Point(18, 348);
+            this.button6.Location = new System.Drawing.Point(18, 370);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(195, 51);
             this.button6.TabIndex = 7;
@@ -133,7 +133,7 @@ namespace Tienda_de_Abarrotes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 409);
+            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);

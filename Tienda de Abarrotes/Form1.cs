@@ -9,8 +9,6 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Configuration;
 using System.Data.OleDb;
-//En App.config se agrego esta linea
-//<add name ="dbx" connectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\GAT_L\Desktop\Abarrotes\Tienda-de-Abarrotes\tiendaDeAbarrotes.accdb" providerName="System.Data.OleDb" />
 namespace Tienda_de_Abarrotes
 {
     public partial class Form1 : Form
