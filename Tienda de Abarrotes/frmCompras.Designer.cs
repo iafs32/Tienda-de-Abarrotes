@@ -73,7 +73,7 @@ namespace Tienda_de_Abarrotes
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(299, 25);
+            this.label1.Location = new System.Drawing.Point(221, 25);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(118, 29);
             this.label1.TabIndex = 0;
@@ -153,7 +153,7 @@ namespace Tienda_de_Abarrotes
             // 
             this.Lbl4.AutoSize = true;
             this.Lbl4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lbl4.Location = new System.Drawing.Point(610, 331);
+            this.Lbl4.Location = new System.Drawing.Point(448, 347);
             this.Lbl4.Name = "Lbl4";
             this.Lbl4.Size = new System.Drawing.Size(79, 29);
             this.Lbl4.TabIndex = 17;
@@ -163,7 +163,7 @@ namespace Tienda_de_Abarrotes
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(466, 331);
+            this.label6.Location = new System.Drawing.Point(304, 347);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(138, 29);
             this.label6.TabIndex = 18;
@@ -173,7 +173,7 @@ namespace Tienda_de_Abarrotes
             // 
             this.LblFecha.AutoSize = true;
             this.LblFecha.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblFecha.Location = new System.Drawing.Point(501, 9);
+            this.LblFecha.Location = new System.Drawing.Point(12, 354);
             this.LblFecha.Name = "LblFecha";
             this.LblFecha.Size = new System.Drawing.Size(51, 20);
             this.LblFecha.TabIndex = 21;
@@ -273,11 +273,11 @@ namespace Tienda_de_Abarrotes
             this.precioUnitarioDataGridViewTextBoxColumn,
             this.valorTotalDataGridViewTextBoxColumn});
             this.dgvInventario.DataSource = this.inventarioBindingSource;
-            this.dgvInventario.Location = new System.Drawing.Point(449, 155);
+            this.dgvInventario.Location = new System.Drawing.Point(366, 186);
             this.dgvInventario.Name = "dgvInventario";
             this.dgvInventario.RowHeadersWidth = 62;
             this.dgvInventario.RowTemplate.Height = 28;
-            this.dgvInventario.Size = new System.Drawing.Size(240, 150);
+            this.dgvInventario.Size = new System.Drawing.Size(91, 73);
             this.dgvInventario.TabIndex = 29;
             this.dgvInventario.Visible = false;
             // 
@@ -325,7 +325,7 @@ namespace Tienda_de_Abarrotes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(714, 383);
+            this.ClientSize = new System.Drawing.Size(556, 383);
             this.Controls.Add(this.dgvInventario);
             this.Controls.Add(this.rdbBancos);
             this.Controls.Add(this.rdbCaja);

@@ -21,7 +21,9 @@ namespace Tienda_de_Abarrotes
         {
             if (rdbVenta.Checked == true)
             {
-
+                this.Hide();
+                frmVentas frmVentas = new frmVentas();
+                frmVentas.Show();
             }
             else if (rdbCompra.Checked == true)
             {
