@@ -60,7 +60,7 @@
             // 
             this.lblVentas.AutoSize = true;
             this.lblVentas.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblVentas.Location = new System.Drawing.Point(153, 9);
+            this.lblVentas.Location = new System.Drawing.Point(155, 9);
             this.lblVentas.Name = "lblVentas";
             this.lblVentas.Size = new System.Drawing.Size(109, 32);
             this.lblVentas.TabIndex = 0;
@@ -108,6 +108,7 @@
             this.btnAgregar.TabIndex = 5;
             this.btnAgregar.Text = "Agregar";
             this.btnAgregar.UseVisualStyleBackColor = true;
+            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
             // 
             // btnFinalizar
             // 
@@ -117,11 +118,12 @@
             this.btnFinalizar.TabIndex = 6;
             this.btnFinalizar.Text = "Finalizar";
             this.btnFinalizar.UseVisualStyleBackColor = true;
+            this.btnFinalizar.Click += new System.EventHandler(this.btnFinalizar_Click);
             // 
             // lblFecha
             // 
             this.lblFecha.AutoSize = true;
-            this.lblFecha.Location = new System.Drawing.Point(300, 9);
+            this.lblFecha.Location = new System.Drawing.Point(12, 314);
             this.lblFecha.Name = "lblFecha";
             this.lblFecha.Size = new System.Drawing.Size(54, 20);
             this.lblFecha.TabIndex = 7;
@@ -131,7 +133,7 @@
             // 
             this.rdbCaja.AutoSize = true;
             this.rdbCaja.Checked = true;
-            this.rdbCaja.Location = new System.Drawing.Point(31, 241);
+            this.rdbCaja.Location = new System.Drawing.Point(31, 236);
             this.rdbCaja.Name = "rdbCaja";
             this.rdbCaja.Size = new System.Drawing.Size(91, 24);
             this.rdbCaja.TabIndex = 8;
@@ -142,11 +144,10 @@
             // rdbBancos
             // 
             this.rdbBancos.AutoSize = true;
-            this.rdbBancos.Location = new System.Drawing.Point(31, 271);
+            this.rdbBancos.Location = new System.Drawing.Point(31, 266);
             this.rdbBancos.Name = "rdbBancos";
             this.rdbBancos.Size = new System.Drawing.Size(131, 24);
             this.rdbBancos.TabIndex = 9;
-            this.rdbBancos.TabStop = true;
             this.rdbBancos.Text = "Transferencia";
             this.rdbBancos.UseVisualStyleBackColor = true;
             // 
@@ -163,7 +164,7 @@
             // 
             this.lblTotal.AutoSize = true;
             this.lblTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTotal.Location = new System.Drawing.Point(273, 294);
+            this.lblTotal.Location = new System.Drawing.Point(310, 314);
             this.lblTotal.Name = "lblTotal";
             this.lblTotal.Size = new System.Drawing.Size(54, 20);
             this.lblTotal.TabIndex = 11;
@@ -172,7 +173,7 @@
             // lblValorTotal
             // 
             this.lblValorTotal.AutoSize = true;
-            this.lblValorTotal.Location = new System.Drawing.Point(333, 294);
+            this.lblValorTotal.Location = new System.Drawing.Point(370, 314);
             this.lblValorTotal.Name = "lblValorTotal";
             this.lblValorTotal.Size = new System.Drawing.Size(18, 20);
             this.lblValorTotal.TabIndex = 12;
@@ -255,7 +256,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(425, 323);
+            this.ClientSize = new System.Drawing.Size(425, 343);
             this.Controls.Add(this.dgvInventario);
             this.Controls.Add(this.lblValorTotal);
             this.Controls.Add(this.lblTotal);
