@@ -23,6 +23,12 @@ namespace Tienda_de_Abarrotes
 
         private void frmVentas_Load(object sender, EventArgs e)
         {
+            // TODO: esta línea de código carga datos en la tabla 'tiendaDeAbarrotesDataSet.Ventas' Puede moverla o quitarla según sea necesario.
+            this.ventasTableAdapter.Fill(this.tiendaDeAbarrotesDataSet.Ventas);
+            // TODO: esta línea de código carga datos en la tabla 'tiendaDeAbarrotesDataSet.Caja' Puede moverla o quitarla según sea necesario.
+            this.cajaTableAdapter.Fill(this.tiendaDeAbarrotesDataSet.Caja);
+            // TODO: esta línea de código carga datos en la tabla 'tiendaDeAbarrotesDataSet.Bancos' Puede moverla o quitarla según sea necesario.
+            this.bancosTableAdapter.Fill(this.tiendaDeAbarrotesDataSet.Bancos);
             // TODO: esta línea de código carga datos en la tabla 'tiendaDeAbarrotesDataSet.Inventario' Puede moverla o quitarla según sea necesario.
             this.inventarioTableAdapter.Fill(this.tiendaDeAbarrotesDataSet.Inventario);
 
@@ -47,6 +53,17 @@ namespace Tienda_de_Abarrotes
 
         private void btnFinalizar_Click(object sender, EventArgs e)
         {
+            if (rdbCaja.Checked == true)
+            {
+                this.cajaTableAdapter.Insertar(Convert.ToDateTime(lblFecha.Text), Convert.ToDecimal(ventaTotal));
+            }
+            else if (rdbBancos.Checked == true)
+            {
+                this.bancosTableAdapter.Insertar(Convert.ToDateTime(lblFecha.Text), Convert.ToDecimal(ventaTotal));
+            }
+
+            this.ventasTableAdapter.Insertar(Convert.ToDateTime(lblFecha.Text), Convert.ToDecimal(ventaTotal));
+            
             this.Close();
             frmMenu frmMenu = new frmMenu();
             frmMenu.Show();

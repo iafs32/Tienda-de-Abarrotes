@@ -42,25 +42,34 @@
             this.lblPago = new System.Windows.Forms.Label();
             this.lblTotal = new System.Windows.Forms.Label();
             this.lblValorTotal = new System.Windows.Forms.Label();
-            this.dgvInventario = new System.Windows.Forms.DataGridView();
-            this.tiendaDeAbarrotesDataSet = new Tienda_de_Abarrotes.tiendaDeAbarrotesDataSet();
             this.inventarioBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.tiendaDeAbarrotesDataSet = new Tienda_de_Abarrotes.tiendaDeAbarrotesDataSet();
             this.inventarioTableAdapter = new Tienda_de_Abarrotes.tiendaDeAbarrotesDataSetTableAdapters.InventarioTableAdapter();
+            this.bancosBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.bancosTableAdapter = new Tienda_de_Abarrotes.tiendaDeAbarrotesDataSetTableAdapters.BancosTableAdapter();
+            this.cajaBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.cajaTableAdapter = new Tienda_de_Abarrotes.tiendaDeAbarrotesDataSetTableAdapters.CajaTableAdapter();
+            this.ventasBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.ventasTableAdapter = new Tienda_de_Abarrotes.tiendaDeAbarrotesDataSetTableAdapters.VentasTableAdapter();
+            this.dgvInventario = new System.Windows.Forms.DataGridView();
             this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nombreDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.piezasDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.precioUnitarioDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.valorTotalDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvInventario)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tiendaDeAbarrotesDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.inventarioBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tiendaDeAbarrotesDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bancosBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cajaBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ventasBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvInventario)).BeginInit();
             this.SuspendLayout();
             // 
             // lblVentas
             // 
             this.lblVentas.AutoSize = true;
             this.lblVentas.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblVentas.Location = new System.Drawing.Point(155, 9);
+            this.lblVentas.Location = new System.Drawing.Point(156, 9);
             this.lblVentas.Name = "lblVentas";
             this.lblVentas.Size = new System.Drawing.Size(109, 32);
             this.lblVentas.TabIndex = 0;
@@ -179,6 +188,47 @@
             this.lblValorTotal.TabIndex = 12;
             this.lblValorTotal.Text = "0";
             // 
+            // inventarioBindingSource
+            // 
+            this.inventarioBindingSource.DataMember = "Inventario";
+            this.inventarioBindingSource.DataSource = this.tiendaDeAbarrotesDataSet;
+            // 
+            // tiendaDeAbarrotesDataSet
+            // 
+            this.tiendaDeAbarrotesDataSet.DataSetName = "tiendaDeAbarrotesDataSet";
+            this.tiendaDeAbarrotesDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // inventarioTableAdapter
+            // 
+            this.inventarioTableAdapter.ClearBeforeFill = true;
+            // 
+            // bancosBindingSource
+            // 
+            this.bancosBindingSource.DataMember = "Bancos";
+            this.bancosBindingSource.DataSource = this.tiendaDeAbarrotesDataSet;
+            // 
+            // bancosTableAdapter
+            // 
+            this.bancosTableAdapter.ClearBeforeFill = true;
+            // 
+            // cajaBindingSource
+            // 
+            this.cajaBindingSource.DataMember = "Caja";
+            this.cajaBindingSource.DataSource = this.tiendaDeAbarrotesDataSet;
+            // 
+            // cajaTableAdapter
+            // 
+            this.cajaTableAdapter.ClearBeforeFill = true;
+            // 
+            // ventasBindingSource
+            // 
+            this.ventasBindingSource.DataMember = "Ventas";
+            this.ventasBindingSource.DataSource = this.tiendaDeAbarrotesDataSet;
+            // 
+            // ventasTableAdapter
+            // 
+            this.ventasTableAdapter.ClearBeforeFill = true;
+            // 
             // dgvInventario
             // 
             this.dgvInventario.AutoGenerateColumns = false;
@@ -190,27 +240,13 @@
             this.precioUnitarioDataGridViewTextBoxColumn,
             this.valorTotalDataGridViewTextBoxColumn});
             this.dgvInventario.DataSource = this.inventarioBindingSource;
-            this.dgvInventario.Location = new System.Drawing.Point(312, 188);
+            this.dgvInventario.Location = new System.Drawing.Point(279, 185);
             this.dgvInventario.Name = "dgvInventario";
             this.dgvInventario.RowHeadersWidth = 62;
             this.dgvInventario.RowTemplate.Height = 28;
-            this.dgvInventario.Size = new System.Drawing.Size(101, 77);
+            this.dgvInventario.Size = new System.Drawing.Size(63, 64);
             this.dgvInventario.TabIndex = 13;
             this.dgvInventario.Visible = false;
-            // 
-            // tiendaDeAbarrotesDataSet
-            // 
-            this.tiendaDeAbarrotesDataSet.DataSetName = "tiendaDeAbarrotesDataSet";
-            this.tiendaDeAbarrotesDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // inventarioBindingSource
-            // 
-            this.inventarioBindingSource.DataMember = "Inventario";
-            this.inventarioBindingSource.DataSource = this.tiendaDeAbarrotesDataSet;
-            // 
-            // inventarioTableAdapter
-            // 
-            this.inventarioTableAdapter.ClearBeforeFill = true;
             // 
             // idDataGridViewTextBoxColumn
             // 
@@ -256,7 +292,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(425, 343);
+            this.ClientSize = new System.Drawing.Size(428, 344);
             this.Controls.Add(this.dgvInventario);
             this.Controls.Add(this.lblValorTotal);
             this.Controls.Add(this.lblTotal);
@@ -274,9 +310,12 @@
             this.Name = "frmVentas";
             this.Text = "Ventas";
             this.Load += new System.EventHandler(this.frmVentas_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvInventario)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tiendaDeAbarrotesDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.inventarioBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tiendaDeAbarrotesDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bancosBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cajaBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ventasBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvInventario)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -297,10 +336,16 @@
         private System.Windows.Forms.Label lblPago;
         private System.Windows.Forms.Label lblTotal;
         private System.Windows.Forms.Label lblValorTotal;
-        private System.Windows.Forms.DataGridView dgvInventario;
         private tiendaDeAbarrotesDataSet tiendaDeAbarrotesDataSet;
         private System.Windows.Forms.BindingSource inventarioBindingSource;
         private tiendaDeAbarrotesDataSetTableAdapters.InventarioTableAdapter inventarioTableAdapter;
+        private System.Windows.Forms.BindingSource bancosBindingSource;
+        private tiendaDeAbarrotesDataSetTableAdapters.BancosTableAdapter bancosTableAdapter;
+        private System.Windows.Forms.BindingSource cajaBindingSource;
+        private tiendaDeAbarrotesDataSetTableAdapters.CajaTableAdapter cajaTableAdapter;
+        private System.Windows.Forms.BindingSource ventasBindingSource;
+        private tiendaDeAbarrotesDataSetTableAdapters.VentasTableAdapter ventasTableAdapter;
+        private System.Windows.Forms.DataGridView dgvInventario;
         private System.Windows.Forms.DataGridViewTextBoxColumn idDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn nombreDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn piezasDataGridViewTextBoxColumn;
