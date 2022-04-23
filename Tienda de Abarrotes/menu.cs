@@ -19,7 +19,9 @@ namespace Tienda_de_Abarrotes
 
         private void button3_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            frmCuentas frmCuentas = new frmCuentas();
+            frmCuentas.Show();
         }
 
         private void btnInventario_Click(object sender, EventArgs e)
