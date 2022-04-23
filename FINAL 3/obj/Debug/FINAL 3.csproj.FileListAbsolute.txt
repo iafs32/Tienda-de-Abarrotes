@@ -1,0 +1,16 @@
+C:\Users\GAT_L\Desktop\New folder\FINAL RESURECCION\FINAL 3\FINAL 3\bin\Debug\tiendaDeAbarrotes.accdb
+C:\Users\GAT_L\Desktop\New folder\FINAL RESURECCION\FINAL 3\FINAL 3\bin\Debug\FINAL 3.exe.config
+C:\Users\GAT_L\Desktop\New folder\FINAL RESURECCION\FINAL 3\FINAL 3\bin\Debug\FINAL 3.exe
+C:\Users\GAT_L\Desktop\New folder\FINAL RESURECCION\FINAL 3\FINAL 3\bin\Debug\FINAL 3.pdb
+C:\Users\GAT_L\Desktop\New folder\FINAL RESURECCION\FINAL 3\FINAL 3\obj\Debug\FINAL_3.Form1.resources
+C:\Users\GAT_L\Desktop\New folder\FINAL RESURECCION\FINAL 3\FINAL 3\obj\Debug\FINAL_3.Properties.Resources.resources
+C:\Users\GAT_L\Desktop\New folder\FINAL RESURECCION\FINAL 3\FINAL 3\obj\Debug\FINAL 3.csproj.GenerateResource.cache
+C:\Users\GAT_L\Desktop\New folder\FINAL RESURECCION\FINAL 3\FINAL 3\obj\Debug\FINAL 3.csproj.CoreCompileInputs.cache
+C:\Users\GAT_L\Desktop\New folder\FINAL RESURECCION\FINAL 3\FINAL 3\obj\Debug\FINAL 3.exe
+C:\Users\GAT_L\Desktop\New folder\FINAL RESURECCION\FINAL 3\FINAL 3\obj\Debug\FINAL 3.pdb
+C:\Users\GAT_L\Desktop\New folder\FINAL RESURECCION\FINAL 3\FINAL 3\obj\Debug\FINAL 3.csproj.AssemblyReference.cache
+C:\Users\GAT_L\Desktop\New folder\FINAL RESURECCION\FINAL 3\FINAL 3\obj\Debug\FINAL_3.Form2.resources
+C:\Users\GAT_L\Desktop\New folder\FINAL RESURECCION\FINAL 3\FINAL 3\obj\Debug\FINAL_3.Form3.resources
+C:\Users\GAT_L\Desktop\New folder\FINAL RESURECCION\FINAL 3\FINAL 3\obj\Debug\FINAL_3.Form4.resources
+C:\Users\GAT_L\Desktop\New folder\FINAL RESURECCION\FINAL 3\FINAL 3\obj\Debug\FINAL_3.Form5.resources
+C:\Users\GAT_L\Desktop\New folder\FINAL RESURECCION\FINAL 3\FINAL 3\obj\Debug\FINAL_3.Form6.resources
